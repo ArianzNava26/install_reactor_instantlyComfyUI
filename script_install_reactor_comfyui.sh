@@ -4,7 +4,7 @@ echo "Welcome to this Lovely SCripT!!"
 echo "Lets START the Games!"
 
 ##Mencari Lokasi Folder Custom Nodes - Finding The Custom Nodes Folder##
-MENCARI_NODES=$(find ~ -type d -iname "custom_nodes" 2>/dev/null | head -n 1)
+MENCARI_NODES=$(find / -type d -iname "custom_nodes" 2>/dev/null | head -n 1)
 if [ -z "$MENCARI_NODES" ]; then
   echo "Maaf, tidak ada foldernya"
   exit 1
