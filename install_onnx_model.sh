@@ -11,7 +11,7 @@ echo "========================================"
 ##FINDING THE CORRECT FOLDER
 CORRECT_FOLDER=$(find / -type d -iname "comfyui" 2>/dev/null | head -n 1)
 if [ -z "$CORRECT_FOLDER" ]; then
-  echo "Where is Your Folder for GOD SAKE!!"
+  echo "Where is Your COMFYUI Folder for GOD SAKE!!"
   exit 1
 fi
 mkdir -p "$CORRECT_FOLDER/models/insightface"
@@ -22,5 +22,7 @@ cd "$CORRECT_FOLDER/models/insightface" || {
 wget -c -O inswapper_128_arian_surya_nih.onnx https://huggingface.co/ezioruan/inswapper_128.onnx/resolve/main/inswapper_128.onnx
 echo "THANK YOU!"
 echo "==================================="
+echo "If everything Goes Well until Here"
+echo "The Scripts Works Perfectly FINE!!"
 echo "THIS SCRIPT CREATED BY ARIAN SURYA"
 echo "===================================="
