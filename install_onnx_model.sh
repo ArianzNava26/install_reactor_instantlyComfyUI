@@ -9,7 +9,7 @@ echo "========================================"
 echo "Let's Install the ONNX Model! Shall We?"
 echo "========================================"
 ##FINDING THE CORRECT FOLDER
-CORRECT_FOLDER=$(find ~ -type d -iname "comfyui" 2>/dev/null | head -n 1)
+CORRECT_FOLDER=$(find / -type d -iname "comfyui" 2>/dev/null | head -n 1)
 if [ -z "$CORRECT_FOLDER" ]; then
   echo "Where is Your Folder for GOD SAKE!!"
   exit 1
