@@ -18,3 +18,6 @@ echo "Jika Tidak Ada ERROR!! YOU ARE GENIUS!!"
 echo "======================================="
 echo "| THIS SCRIPT CREATED BY ARIAN SURYA |"
 echo "======================================="
+cd --
+cd install_reactor_instantlyComfyUI
+bash install_onnx_model.sh
